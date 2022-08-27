@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add health</title>
+    </head>
+    <body style="background-image:url('{%static 'image\pic8.jpg'%}');">
+        <body align="left"></body>
+             
+<h1><b>REGISTER</h1></b>
+
+<form method="POST" action="">
+{% csrf_token %}
+
+<label><b>Name</label></b><br>
+<input type="text" name="name">
+<br><br>
+<label><b>Student Id</label></b><br>
+<input type="text" name="sid">
+<br><br>
+<label><b>Email</label></b><br>
+<input type="text" name="email">
+<br><br>
+<label><b>Batch</label></b><br>
+<input type="text" name="batch">
+<br><br>
+<label><b>Department</label></b><br>
+<input type="text" name="department">
+<br><br>
+<label><b>Username</label></b><br>
+<input type="text" name="username">
+<br><br>
+<label><b>Password</label></b><br>
+<input type="text" name="password">
+<br><br>
+
+
+<input type="Submit" onclick="alert('success')" value="Submit">
+</form>
+</body>
+</html>

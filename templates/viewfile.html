@@ -1,0 +1,30 @@
+
+
+
+<html>
+    <body>
+
+    <table border="2" class="table">
+
+    <tr>
+        <th>File</th>
+        <th></th>
+
+        <th>Download</th>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    </tr>   {% for i in ce %} 
+    
+    <tr>
+        <td><a>
+
+            <img src="{{i.image.url}}" alt="" width="160" height="100">
+        </a></td>
+        <td></td>
+        <td><a href={{i.image.url}} download>Download File</a></td>
+    </tr>
+
+    {% endfor %}
+
+</table>
+</body>
+</html>

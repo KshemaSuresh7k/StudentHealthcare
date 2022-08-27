@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add health</title>
+    </head>
+    <body style="background-image:url('{%static 'image\pic8.jpg'%}');">
+        <body align="left"></body>
+            <h1><b>HEALTH DETAILS</h1></b> 
+<form method="POST" action="">
+{% csrf_token %}
+
+    <label><b>Name</label></b><br>
+    <input type="text" name="name">
+    <br>
+    <br>
+    <label><b>Height</label></b><br>
+    <input type="text" name="height">
+    <br><br>
+    <label><b>Weight</label></b><br>
+    <input type="text" name="weight">
+    <br><br>
+    <label><b>Bloodgroup</label></b><br>
+    <input type="text" name="bloodgroup">
+    <br><br>
+    <label><b>Drinkingwater</label></b><br>
+    <input type="text" name="drinkingwater">
+    <br><br>
+    <label><b>Regularperiods</label></b><br>
+    <input type="text" name="regularperiods">
+    <br><br>
+    <label><b>Mentalissues</label></b><br>
+    <input type="text" name="mentalissues">
+    <br><br>
+    <label><b>sid</label></b><br>
+    <input type="text" name="sid">
+    <br><br>
+    <label><b>Department</label></b><br>
+<input type="text" name="department">
+<br><br>
+
+    <input type="Submit" onclick="alert('success')" name="Submit">
+
+</form>
+</body>
+</html>

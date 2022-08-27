@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home page</title>
+    </head>
+    <body style="background-image:url('{%static 'image\pic2.jpg'%}');">
+
+<center><h1>welcome Student</h1></center><br><br><br>
+<center>
+    <a href="/addvaccination/"><button type="button">Vaccination_Details</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    
+<a href="/healthcare/"><button type="button">Add_HealthCare</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/viewhealth/"><button type="button">View_Healthcare</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="{(% url 'viewfile' i.id %)}"><button type="button">View_File</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</center>
+</body>
+</html>
+</center>
+</body>
+</html>

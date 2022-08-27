@@ -1,0 +1,31 @@
+
+<html>
+    <body bgcolor="lightblue">
+    <table border="2">
+        <tr>
+            <th>name</th>
+            <th>height</th>
+            <th>weight</th>
+            <th>bloodgroup</th>
+            <th>drinkingwater</th>
+            <th>regularperiods</th>
+            <th>mentalissues</th>
+            <th></th>
+        </tr>
+        {% for i in cr %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.height}}</td>
+            <td>{{i.weight}}</td>
+            <td>{{i.bloodgroup}}</td>
+            <td>{{i.drinkingwater}}</td>
+            <td>{{i.regularperiods}}</td>
+            <td>{{i.mentalissues}}</td>
+            <td></td>
+        </tr>
+        {% endfor %}
+    
+    </table>
+    </body>
+    </html>
+    
